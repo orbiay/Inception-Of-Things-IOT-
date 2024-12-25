@@ -17,7 +17,7 @@ spec:
       - name: app-three-hello-kubernetes
         image: paulbouwer/hello-kubernetes:1.5
         ports:
-        - containerPort: 8082
+        - containerPort: 8080
 
 
 ---
@@ -32,8 +32,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort:  8082
-  type: LoadBalancer
-
-
+      targetPort:  8080
 
