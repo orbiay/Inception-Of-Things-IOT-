@@ -18,7 +18,7 @@ spec:
       - name: app-one-hello-kubernetes
         image: paulbouwer/hello-kubernetes:1.5
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
 
 ---
 
@@ -32,6 +32,4 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort:  8081
-  type: LoadBalancer
-
+      targetPort:  8080
